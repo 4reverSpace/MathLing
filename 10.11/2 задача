@@ -1,0 +1,24 @@
+class game:
+    long_of_games=0
+    num_of_games=0
+    def __init__(self,long):
+        game.num_of_games+=1
+        game.long_of_games+=long
+    def popularity(self,newp):
+        children.num_of_children+=newp
+
+class children:
+    num_of_children=0
+    def __init__(self,name):
+        children.num_of_children+=1
+    def playing(self,long,many):
+        game.num_of_games-=many
+        game.long_of_games-=long
+a=game(20)
+b=game(40)
+c=children("Karl")
+c.playing(12,2)
+print(c.num_of_children)
+print(a.num_of_games, a.long_of_games)
+a.popularity(12)
+print(c.num_of_children)
