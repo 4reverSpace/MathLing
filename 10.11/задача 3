@@ -1,0 +1,18 @@
+class tickets:
+    num_of_tickets=200
+    ways=['a','b','c','d']
+    price=[10,12,13,14]
+    can=0
+    def __init__(self,way):
+        if way in tickets.ways:
+            can=1
+    def buy(self):
+        if can==1:
+            money.all-=money.people*price[ways.index(way)]
+
+class money:
+    all=0
+    people=0
+    def __init__(self,have):
+        money.all+=have
+        money.people+=1
