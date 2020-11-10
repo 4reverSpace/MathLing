@@ -1,0 +1,28 @@
+class FMSH:
+    num_of_people=0
+    def __init__ (self,name):
+        self.name=name
+        self.scores=[]
+        self.num_of_scores=0
+        FMSH.num_of_people+=1
+
+    def add_score(self,score):
+        self.num_of_scores+=1
+        self.scores.append(score)
+def mesball(a):
+    return(sum(a.scores)/(a.num_of_scores))
+e=FMSH("Егор")
+d=FMSH("Денис")
+while(1==1):
+    if int(input())==0:
+        break
+    else:
+        e.add_score(int(input()))
+while(1==1):
+    if int(input())==0:
+        break
+    else:
+        d.add_score(int(input()))
+print(d.num_of_people)
+print(mesball(e))
+print(mesball(d))
